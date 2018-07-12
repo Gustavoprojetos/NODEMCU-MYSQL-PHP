@@ -2,7 +2,7 @@
 #include <ESP8266WiFi.h>
 #include <ArduinoJson.h>
 
-const char* ssid     = "Kamuy";
+const char* ssid     = "Kamuy"
 const char* password = "cgla48123456789";
 const char* host = "automapteste.000webhostapp.com"; //replace it with your webhost url
 String url;
