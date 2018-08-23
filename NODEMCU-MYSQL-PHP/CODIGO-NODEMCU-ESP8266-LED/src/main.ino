@@ -12,10 +12,10 @@ void setup() {
   delay(100);
   pinMode(D1, OUTPUT);
   pinMode(D2, OUTPUT);
-  pinMode(D3, OUTPUT);
+  pinMode(D4, OUTPUT);
   digitalWrite(D1, 0);
   digitalWrite(D2, 0);
-  digitalWrite(D3, 0);
+  digitalWrite(D4, 0);
   Serial.println();
   Serial.println();
   Serial.print("Connecting to ");
@@ -126,12 +126,12 @@ void loop() {
       }
       else if(count == 3){
         if(led == "on"){
-          digitalWrite(D3, 1);
-          Serial.println("D3 is On..!");
+          digitalWrite(D4, 1);
+          Serial.println("D4 is On..!");
         }
         else if(led == "off"){
-          digitalWrite(D3, 0);
-          Serial.println("D3 is Off..!");
+          digitalWrite(D4, 0);
+          Serial.println("D4 is Off..!");
         }
         count = 0;
       }
