@@ -77,15 +77,14 @@ void loop() {
   String section="header";
   while(client.available()){
     String line = client.readStringUntil('\r');
-    //Serial.print(line);
-    // we’ll parse the HTML body here
-    if (section=="header") { // headers..
+    
+    if (section=="header") { 
 
-      if (line=="\n") { // skips the empty space at the beginning
+      if (line=="\n") { 
         section="json";
       }
     }
-    else if (section=="json") {  // print the good stuff
+    else if (section=="json") { 
       section="ignore";
       String result = line.substring(1);
 
@@ -144,5 +143,5 @@ void loop() {
   }
   Serial.println();
   Serial.println("closing connection");
-  delay(1000);
+  delay(2000);
 }
